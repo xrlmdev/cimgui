@@ -4882,25 +4882,3 @@ struct ImFontAtlasBuilder
  const char* ImTextureDataGetFormatName(ImTextureFormat format);
  void ImFontAtlasDebugLogTextureRequests(ImFontAtlas* atlas);
  bool ImFontAtlasGetMouseCursorTexData(ImFontAtlas* atlas, ImGuiMouseCursor cursor_type, ImVec2* out_offset, ImVec2* out_size, ImVec2 out_uv_border[2], ImVec2 out_uv_fill[2]);
-struct ImFontAtlas;
-struct ImFontLoader;
-typedef unsigned int ImGuiFreeTypeLoaderFlags;
-enum ImGuiFreeTypeLoaderFlags_
-{
-    ImGuiFreeTypeLoaderFlags_NoHinting = 1 << 0,
-    ImGuiFreeTypeLoaderFlags_NoAutoHint = 1 << 1,
-    ImGuiFreeTypeLoaderFlags_ForceAutoHint = 1 << 2,
-    ImGuiFreeTypeLoaderFlags_LightHinting = 1 << 3,
-    ImGuiFreeTypeLoaderFlags_MonoHinting = 1 << 4,
-    ImGuiFreeTypeLoaderFlags_Bold = 1 << 5,
-    ImGuiFreeTypeLoaderFlags_Oblique = 1 << 6,
-    ImGuiFreeTypeLoaderFlags_Monochrome = 1 << 7,
-    ImGuiFreeTypeLoaderFlags_LoadColor = 1 << 8,
-    ImGuiFreeTypeLoaderFlags_Bitmap = 1 << 9,
-};
-namespace ImGuiFreeType
-{
-    const ImFontLoader* GetFontLoader();
-    void SetAllocatorFunctions(void* (*alloc_func)(size_t sz, void* user_data), void (*free_func)(void* ptr, void* user_data), void* user_data = nullptr);
-    bool DebugEditFontLoaderFlags(ImGuiFreeTypeLoaderFlags* p_font_loader_flags);
-}

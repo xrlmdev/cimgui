@@ -25234,69 +25234,7 @@ struct ImFontAtlasBuilder\
     item="\
  bool ImFontAtlasGetMouseCursorTexData(ImFontAtlas* atlas, ImGuiMouseCursor cursor_type, ImVec2* out_offset, ImVec2* out_size, ImVec2 out_uv_border[2], ImVec2 out_uv_fill[2]);",
     locat="imgui_internal:3991",
-    re_name="function_re"},
-  [587]={
-    item="\
-struct ImFontAtlas;",
-    locat="imgui_freetype:18",
-    re_name="vardef_re"},
-  [588]={
-    item="\
-struct ImFontLoader;",
-    locat="imgui_freetype:19",
-    re_name="vardef_re"},
-  [589]={
-    item="\
-typedef unsigned int ImGuiFreeTypeLoaderFlags;",
-    locat="imgui_freetype:28",
-    re_name="typedef_re"},
-  [590]={
-    item="\
-enum ImGuiFreeTypeLoaderFlags_\
-{\
-    ImGuiFreeTypeLoaderFlags_NoHinting = 1 << 0,\
-    ImGuiFreeTypeLoaderFlags_NoAutoHint = 1 << 1,\
-    ImGuiFreeTypeLoaderFlags_ForceAutoHint = 1 << 2,\
-    ImGuiFreeTypeLoaderFlags_LightHinting = 1 << 3,\
-    ImGuiFreeTypeLoaderFlags_MonoHinting = 1 << 4,\
-    ImGuiFreeTypeLoaderFlags_Bold = 1 << 5,\
-    ImGuiFreeTypeLoaderFlags_Oblique = 1 << 6,\
-    ImGuiFreeTypeLoaderFlags_Monochrome = 1 << 7,\
-    ImGuiFreeTypeLoaderFlags_LoadColor = 1 << 8,\
-    ImGuiFreeTypeLoaderFlags_Bitmap = 1 << 9,\
-};",
-    locat="imgui_freetype:29",
-    re_name="enum_re"},
-  [591]={
-    childs={
-      [1]={
-        item="\
-    const ImFontLoader* GetFontLoader();",
-        locat="imgui_freetype:67",
-        parent=nil,
-        re_name="function_re"},
-      [2]={
-        item="\
-    void SetAllocatorFunctions(void* (*alloc_func)(size_t sz, void* user_data), void (*free_func)(void* ptr, void* user_data), void* user_data = nullptr);",
-        locat="imgui_freetype:71",
-        parent=nil,
-        re_name="function_re"},
-      [3]={
-        item="\
-    bool DebugEditFontLoaderFlags(ImGuiFreeTypeLoaderFlags* p_font_loader_flags);",
-        locat="imgui_freetype:74",
-        parent=nil,
-        re_name="function_re"}},
-    item="\
-namespace ImGuiFreeType\
-{\
-    const ImFontLoader* GetFontLoader();\
-    void SetAllocatorFunctions(void* (*alloc_func)(size_t sz, void* user_data), void (*free_func)(void* ptr, void* user_data), void* user_data = nullptr);\
-    bool DebugEditFontLoaderFlags(ImGuiFreeTypeLoaderFlags* p_font_loader_flags);\
-}",
-    locat="imgui_freetype:61",
-    name="ImGuiFreeType",
-    re_name="namespace_re"}}
+    re_name="function_re"}}
 t[101].childs[1].parent=t[101]
 t[101].childs[2].parent=t[101]
 t[101].childs[3].parent=t[101]
@@ -28248,7 +28186,4 @@ t[530].childs[18].parent=t[530]
 t[530].childs[19].parent=t[530]
 t[530].childs[20].parent=t[530]
 t[530].childs[21].parent=t[530]
-t[591].childs[1].parent=t[591]
-t[591].childs[2].parent=t[591]
-t[591].childs[3].parent=t[591]
  return t

@@ -125,15 +125,3 @@ CIMGUI_API int ImVector_ImTextureID_grow_capacity(const ImVector_ImTextureID* se
 
 // Obsolete in ImGui 1.92 with IMGUI_DISABLE_OBSOLETE_FUNCTIONS; kept for mimgui scripts.
 CIMGUI_API const ImWchar* ImFontAtlas_GetGlyphRangesCyrillic(ImFontAtlas* self);
-CIMGUI_API const ImWchar* ImFontAtlas_GetGlyphRangesGreek(ImFontAtlas* self);
-CIMGUI_API const ImWchar* ImFontAtlas_GetGlyphRangesKorean(ImFontAtlas* self);
-CIMGUI_API const ImWchar* ImFontAtlas_GetGlyphRangesJapanese(ImFontAtlas* self);
-CIMGUI_API const ImWchar* ImFontAtlas_GetGlyphRangesChineseFull(ImFontAtlas* self);
-CIMGUI_API const ImWchar* ImFontAtlas_GetGlyphRangesChineseSimplifiedCommon(ImFontAtlas* self);
-CIMGUI_API const ImWchar* ImFontAtlas_GetGlyphRangesThai(ImFontAtlas* self);
-CIMGUI_API const ImWchar* ImFontAtlas_GetGlyphRangesVietnamese(ImFontAtlas* self);
-CIMGUI_API void ImFontAtlas_GetTexDataAsAlpha8(ImFontAtlas* self, unsigned char** out_pixels, int* out_width, int* out_height, int* out_bytes_per_pixel);
-CIMGUI_API void ImFontAtlas_GetTexDataAsRGBA32(ImFontAtlas* self, unsigned char** out_pixels, int* out_width, int* out_height, int* out_bytes_per_pixel);
-CIMGUI_API void ImFontAtlas_SetTexID(ImFontAtlas* atlas, ImTextureID id);
-CIMGUI_API bool ImFontAtlas_GetCustomRectByIndex(ImFontAtlas* self, ImFontAtlasRectId id, ImFontAtlasRect* out_r);
-CIMGUI_API ImFontAtlasRectId ImFontAtlas_AddCustomRectFontGlyph(ImFontAtlas* atlas, ImFont* font, ImWchar codepoint, int width, int height, float advance_x, const ImVec2* offset);
